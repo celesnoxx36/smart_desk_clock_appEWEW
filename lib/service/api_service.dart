@@ -3,7 +3,7 @@ import 'package:http/http.dart' as http;
 import '../models/clock_data.dart';
 
 class ApiService {
-  final String esp8266Ip = 'http://192.168.1.50'; // ใส่ IP ของ ESP8266
+  final String esp8266Ip = 'http://192.168.1.161'; // IP ESP8266
 
   Future<ClockData> fetchClockData() async {
     try {
