@@ -101,6 +101,12 @@ class _AlarmScreenState extends State<AlarmScreen> {
           ),
         );
       });
+      // Sync newly added alarm to the ESP8266 clock immediately
+      await _apiService.setAlarm(
+        hour: picked.hour,
+        minute: picked.minute,
+        enabled: true,
+      );
     }
   }
 
